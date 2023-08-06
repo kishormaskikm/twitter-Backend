@@ -1,0 +1,17 @@
+{
+  "name": "twitter_backend",
+  "version": "1.0.0",
+  "description": "twitter clone",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon src/index.js"
+  },
+  "author": "Kishor_maski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.2"
+  }
+}
