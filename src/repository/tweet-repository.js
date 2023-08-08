@@ -1,9 +1,13 @@
 import Tweet from "../models/tweet.js";
-import mongoose from "mongoose";
+import CrudRepository from "./crud-repository.js";
 
 
 
-class TweetRipository {
+class TweetRipository extends CrudRepository{
+
+    constructor(){
+        super(Tweet);
+    }
 
     async create(data){
         try {
