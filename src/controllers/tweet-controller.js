@@ -14,6 +14,7 @@ export const createTweet = async (req , res)=>{
             err: {}
         });    
     } catch (error) {
+        console.log(error);
         return res.status(201).json({
             success : false,
             message: "error encountred",
@@ -35,7 +36,8 @@ export const getTweet = async (req , res)=>{
             err: {}
         });    
     } catch (error) {
-        return res.status(201).json({
+        console.log(error);
+        return res.status(404).json({
             success : false,
             message: "error encountred",
             result :{},

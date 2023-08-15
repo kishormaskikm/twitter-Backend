@@ -3,7 +3,7 @@ import CrudRepository from "./crud-repository.js";
 
 
 
-class TweetRipository extends CrudRepository{
+class TweetRepository extends CrudRepository{
 
     constructor(){
         super(Tweet);
@@ -60,5 +60,5 @@ class TweetRipository extends CrudRepository{
 
 }
 
-export default TweetRipository;
+export default TweetRepository;
 

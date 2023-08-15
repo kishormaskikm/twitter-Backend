@@ -1,7 +1,7 @@
 import Hashtag from "../models/hashtag.js";
 import CrudRepository from "./crud-repository.js";
 
-class HashtagRipository extends CrudRepository{
+class HashtagRepository extends CrudRepository{
 
     constructor(){
         super(Hashtag);
@@ -27,7 +27,7 @@ class HashtagRipository extends CrudRepository{
         }
     }
     // get hashtag by name 
-    async getHashtagByName(text){
+    async findByName(text){
         try {
             const hashtag = await Hashtag.find({
                 text : text
@@ -62,5 +62,5 @@ class HashtagRipository extends CrudRepository{
 
 }
 
-export default HashtagRipository;
+export default HashtagRepository;
 
